@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type = "text/javascript">
+    //    label
+           document.write("Entering the loop!<br /> ");
+           outerloop:        // This is the label name         
+           for (var i = 0; i < 5; i++) {
+              document.write("Outerloop: " + i + "<br />");
+              innerloop:
+              for (var j = 0; j < 5; j++) {
+                 if (j > 3 ) break ;           // Quit the innermost loop
+                 if (i == 2) break innerloop;  // Do the same thing
+                 if (i == 4) break outerloop;  // Quit the outer loop
+                 document.write("Innerloop: " + j + " <br />");
+              }
+           }        
+           document.write("Exiting the loop!<br /> <br>");
+
+           document.write("EXEMPLE 2 <br><br>")
+
+         document.write("Entering the loop!<br /> ");
+         outerloop:     // This is the label name
+         
+         for (var i = 0; i < 3; i++) {
+            document.write("Outerloop: " + i + "<br />");
+            for (var j = 0; j < 5; j++) {
+               if (j == 3) {
+                  continue outerloop;
+               }
+               document.write("Innerloop: " + j + "<br />");
+            }
+         }
+         
+         document.write("Exiting the loop!<br /> ");
+    //loop control 
+    var x = 1;
+        document.write("Entering the loop<br /> ");
+        
+        while (x < 20) {
+           if (x == 5) {
+              break;   // breaks out of loop completely
+           }
+           x = x + 1;
+           document.write( x + "<br />");
+        }         
+        document.write("Exiting the loop!<br /> ");
+// the continue statement
+var x = 1;
+           document.write("Entering the loop<br /> ");
+        
+           while (x < 10) {
+              x = x + 1;
+              
+              if (x == 5) {
+                 continue;   // skip rest of the loop body
+              }
+              document.write( x + "<br />");
+           }         
+           document.write("Exiting the loop!<br /> ");
+     </script> 
+</body>
+</html>
