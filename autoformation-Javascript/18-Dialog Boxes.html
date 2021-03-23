@@ -1,3 +1,5 @@
+<!-- alert  -->
+
 <!-- <html>
    <head>   
       <script type = "text/javascript">
@@ -17,3 +19,54 @@
       </form>     
    </body>
 </html> -->
+
+
+<!-- confirm  -->
+
+<!-- <html>
+   <head>   
+      <script type = "text/javascript">
+        
+            function getConfirmation() {
+               var retVal = confirm("Do you want to continue ?");
+               if( retVal == true ) {
+                  document.write ("User wants to continue!");
+                  return true;
+               } else {
+                  document.write ("User does not want to continue!");
+                  return false;
+               }
+            }
+         
+      </script>     
+   </head>
+   
+   <body>
+      <p>Click the following button to see the result: </p>      
+      <form>
+         <input type = "button" value = "Click Me" onclick = "getConfirmation();" />
+      </form>      
+   </body>
+</html> -->
+
+
+<!-- prompt  -->
+<html>
+   <head>     
+      <script type = "text/javascript">
+         
+            function getValue() {
+               var retVal = prompt("Enter your name : ", "your name here");
+               document.write("You have entered : " + retVal);
+            }
+       
+      </script>      
+   </head>
+   
+   <body>
+      <p>Click the following button to see the result: </p>      
+      <form>
+         <input type = "button" value = "Click Me" onclick = "getValue();" />
+      </form>      
+   </body>
+</html>
